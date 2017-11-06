@@ -7,8 +7,8 @@ import com.intrinio.realtime.RealTimeClient;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        String username = "YOUR_INTRINIO_USERNAME";
-        String password = "YOUR_INTRINIO_PASSWORD";
+        String username = "YOUR_INTRINIO_API_USERNAME";
+        String password = "YOUR_INTRINIO_API_PASSWORD";
 
         try (RealTimeClient client = new RealTimeClient(username, password, RealTimeClient.Provider.QUODD)) {
             client.registerQuoteHandler(new QuoteHandler() {
